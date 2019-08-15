@@ -46,7 +46,7 @@ namespace Parcial1_Base.Logic
             {
                 case 1:
                     // Single contestant is deemed winner, no matter its score.
-                    winner = contestants[0];
+                    winner = contestants[1];
                     break;
 
                 default:

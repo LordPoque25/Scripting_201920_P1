@@ -1,5 +1,5 @@
 ﻿namespace Parcial1_Base.Logic
-{
+{  
     /// <summary>
     /// Dress is the base accessory for all dolls. Dolls can't participate without one.
     /// </summary>
@@ -43,7 +43,8 @@
 
         public Dress(int style, EColor color, EDressCategory category) : base(style)
         {
-            
+            EColor = color;
+            EDressCategory = category;
         }
 
         /// <summary>

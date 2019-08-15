@@ -7,6 +7,18 @@
     {
         public Bracelet(int style) : base(style)
         {
+            if(Dress.EDressCategory.Suit)
+                {
+                    
+                }
+
+            if(Dress.EDressCategory.Casual)
+                {
+                }
+
+            if(Dress.EDressCategory.Party)
+                {
+                }
         }
 
         /// <summary>

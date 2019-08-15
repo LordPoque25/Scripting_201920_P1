@@ -27,12 +27,12 @@ namespace Parcial1_Base.Logic
         /// </summary>
         public int TotalAccessories { get => accessories.Count; }
 
-        public int BraceletCount { get => 0; }
-
+        public int BraceletCount { get => Bracelet; }
+        
         /// <summary>
         /// The total style score, affected by each worn accessory.
         /// </summary>
-        public int Style { get => 0; }
+        public int Style { get => Doll; }
 
         public Doll(string name)
         {
@@ -48,7 +48,13 @@ namespace Parcial1_Base.Logic
         {
             bool result = false;
 
-            return result;
+            if(Wear == true)
+                {
+                    Remove = true;
+                    wear = false;
+}               } 
+
+        
         }
 
         /// <summary>
@@ -58,7 +64,9 @@ namespace Parcial1_Base.Logic
         /// <returns>True if the doll successfully wore the accessory. False otherwise</returns>
         public bool Wear(Accessory a)
         {
-            return false;
+            Bracelet = new Bracelet();
+            Purse = new Purse();
+            Necklace = new Necklace();
         }
 
         /// <summary>
@@ -69,5 +77,5 @@ namespace Parcial1_Base.Logic
         {
             return new Doll(Name);
         }
-    }
+    
 }
